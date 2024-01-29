@@ -1,0 +1,66 @@
+ERROR - 2023-11-06 04:19:39 --> mysqli_sql_exception: Table 'dbbaju.entriquiz' doesn't exist in C:\xampp2\htdocs\latihan1\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp2\htdocs\latihan1\system\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `en...', 0)
+#1 C:\xampp2\htdocs\latihan1\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `en...')
+#2 C:\xampp2\htdocs\latihan1\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `en...')
+#3 C:\xampp2\htdocs\latihan1\system\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `en...', Array, false)
+#4 C:\xampp2\htdocs\latihan1\app\Controllers\Quiz.php(59): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 C:\xampp2\htdocs\latihan1\system\CodeIgniter.php(919): App\Controllers\Quiz->simpan()
+#6 C:\xampp2\htdocs\latihan1\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Quiz))
+#7 C:\xampp2\htdocs\latihan1\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp2\htdocs\latihan1\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp2\htdocs\latihan1\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp2\\htdoc...')
+#10 {main}
+CRITICAL - 2023-11-06 04:19:40 --> Table 'dbbaju.entriquiz' doesn't exist
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `entriquiz` (`kodebaju`, `jenisbaju`, `hargabaju`, `jumlahbaju`, `total`) VALUES (:kodebaju:, :jenisbaju:, :hargabaju:, :jumlahbaju:, :total:)', [...], false)
+ 2 APPPATH\Controllers\Quiz.php(59): CodeIgniter\Database\BaseBuilder->insert([...])
+ 3 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Quiz->simpan()
+ 4 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Quiz))
+ 5 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp2\\htdocs\\latihan1\\public\\index.php')
+ERROR - 2023-11-06 04:22:13 --> mysqli_sql_exception: Table 'dbbaju.entriquiz' doesn't exist in C:\xampp2\htdocs\latihan1\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp2\htdocs\latihan1\system\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `en...', 0)
+#1 C:\xampp2\htdocs\latihan1\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `en...')
+#2 C:\xampp2\htdocs\latihan1\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `en...')
+#3 C:\xampp2\htdocs\latihan1\system\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `en...', Array, false)
+#4 C:\xampp2\htdocs\latihan1\app\Controllers\Quiz.php(59): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 C:\xampp2\htdocs\latihan1\system\CodeIgniter.php(919): App\Controllers\Quiz->simpan()
+#6 C:\xampp2\htdocs\latihan1\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Quiz))
+#7 C:\xampp2\htdocs\latihan1\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp2\htdocs\latihan1\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp2\htdocs\latihan1\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp2\\htdoc...')
+#10 {main}
+CRITICAL - 2023-11-06 04:22:13 --> Table 'dbbaju.entriquiz' doesn't exist
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `entriquiz` (`kodebaju`, `jenisbaju`, `hargabaju`, `jumlahbaju`, `total`) VALUES (:kodebaju:, :jenisbaju:, :hargabaju:, :jumlahbaju:, :total:)', [...], false)
+ 2 APPPATH\Controllers\Quiz.php(59): CodeIgniter\Database\BaseBuilder->insert([...])
+ 3 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Quiz->simpan()
+ 4 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Quiz))
+ 5 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp2\\htdocs\\latihan1\\public\\index.php')
+ERROR - 2023-11-06 04:23:37 --> mysqli_sql_exception: Unknown column 'total' in 'field list' in C:\xampp2\htdocs\latihan1\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp2\htdocs\latihan1\system\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `ba...', 0)
+#1 C:\xampp2\htdocs\latihan1\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `ba...')
+#2 C:\xampp2\htdocs\latihan1\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `ba...')
+#3 C:\xampp2\htdocs\latihan1\system\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ba...', Array, false)
+#4 C:\xampp2\htdocs\latihan1\app\Controllers\Quiz.php(59): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 C:\xampp2\htdocs\latihan1\system\CodeIgniter.php(919): App\Controllers\Quiz->simpan()
+#6 C:\xampp2\htdocs\latihan1\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Quiz))
+#7 C:\xampp2\htdocs\latihan1\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp2\htdocs\latihan1\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp2\htdocs\latihan1\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp2\\htdoc...')
+#10 {main}
+CRITICAL - 2023-11-06 04:23:37 --> Unknown column 'total' in 'field list'
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `baju` (`kodebaju`, `jenisbaju`, `hargabaju`, `jumlahbaju`, `total`) VALUES (:kodebaju:, :jenisbaju:, :hargabaju:, :jumlahbaju:, :total:)', [...], false)
+ 2 APPPATH\Controllers\Quiz.php(59): CodeIgniter\Database\BaseBuilder->insert([...])
+ 3 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Quiz->simpan()
+ 4 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Quiz))
+ 5 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp2\\htdocs\\latihan1\\public\\index.php')

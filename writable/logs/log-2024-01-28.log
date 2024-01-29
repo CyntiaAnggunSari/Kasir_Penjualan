@@ -1,0 +1,54 @@
+ERROR - 2024-01-28 08:24:42 --> mysqli_sql_exception: Table 'dbpenjualan2110038.tbl_kas_masjid' doesn't exist in C:\xampp2\htdocs\kasirpenjualan\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp2\htdocs\kasirpenjualan\system\Database\MySQLi\Connection.php(306): mysqli->query('select id_kas_m...', 0)
+#1 C:\xampp2\htdocs\kasirpenjualan\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('select id_kas_m...')
+#2 C:\xampp2\htdocs\kasirpenjualan\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('select id_kas_m...')
+#3 C:\xampp2\htdocs\kasirpenjualan\app\Models\ModelKasmasuk.php(11): CodeIgniter\Database\BaseConnection->query('select id_kas_m...')
+#4 C:\xampp2\htdocs\kasirpenjualan\app\Controllers\Kasmasuk.php(12): App\Models\ModelKasmasuk->getKasmasuk()
+#5 C:\xampp2\htdocs\kasirpenjualan\system\CodeIgniter.php(919): App\Controllers\Kasmasuk->index()
+#6 C:\xampp2\htdocs\kasirpenjualan\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Kasmasuk))
+#7 C:\xampp2\htdocs\kasirpenjualan\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp2\htdocs\kasirpenjualan\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp2\htdocs\kasirpenjualan\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp2\\htdoc...')
+#10 {main}
+CRITICAL - 2024-01-28 08:24:42 --> Table 'dbpenjualan2110038.tbl_kas_masjid' doesn't exist
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 APPPATH\Models\ModelKasmasuk.php(11): CodeIgniter\Database\BaseConnection->query('select id_kas_masjid,kas_keluar,nama,tanggal,ket,kas_masuk,jenis_kas,status from tbl_kas_masjid join tbl_donatur on iddonaturmasjid=iddonatur where status=\'Masuk\'')
+ 2 APPPATH\Controllers\Kasmasuk.php(12): App\Models\ModelKasmasuk->getKasmasuk()
+ 3 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Kasmasuk->index()
+ 4 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Kasmasuk))
+ 5 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp2\\htdocs\\kasirpenjualan\\public\\index.php')
+INFO - 2024-01-28 08:24:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-28 08:25:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-28 08:25:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-28 08:25:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-28 08:25:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-28 08:25:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-28 08:25:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-28 08:25:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-28 08:25:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-28 08:34:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-28 08:34:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-28 08:34:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-28 08:36:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-28 08:36:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-28 08:36:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-28 08:36:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-28 08:38:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-28 08:38:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-28 08:39:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-28 08:39:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-28 08:39:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-28 08:40:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-28 08:41:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-28 08:41:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-28 08:43:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-28 08:43:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-28 08:43:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-28 08:43:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-28 08:43:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-28 08:43:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-28 08:44:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-28 08:44:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.

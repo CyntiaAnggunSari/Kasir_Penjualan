@@ -1,0 +1,205 @@
+CRITICAL - 2023-11-15 04:48:53 --> Class 'App\Models\ModelPengurus' not found
+in APPPATH\Controllers\Pengurus.php on line 11.
+ 1 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Pengurus->index()
+ 2 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pengurus))
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp2\\htdocs\\latihan1\\public\\index.php')
+ERROR - 2023-11-15 04:53:30 --> mysqli_sql_exception: Table 'dbbaju.tbl_pengurus' doesn't exist in C:\xampp2\htdocs\latihan1\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp2\htdocs\latihan1\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp2\htdocs\latihan1\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp2\htdocs\latihan1\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp2\htdocs\latihan1\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp2\htdocs\latihan1\app\Models\ModelPengurus.php(12): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp2\htdocs\latihan1\app\Controllers\Pengurus.php(12): App\Models\ModelPengurus->getPengurus()
+#6 C:\xampp2\htdocs\latihan1\system\CodeIgniter.php(919): App\Controllers\Pengurus->index()
+#7 C:\xampp2\htdocs\latihan1\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pengurus))
+#8 C:\xampp2\htdocs\latihan1\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp2\htdocs\latihan1\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp2\htdocs\latihan1\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp2\\htdoc...')
+#11 {main}
+CRITICAL - 2023-11-15 04:53:30 --> Table 'dbbaju.tbl_pengurus' doesn't exist
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `tbl_pengurus`', [], false)
+ 2 APPPATH\Models\ModelPengurus.php(12): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\Pengurus.php(12): App\Models\ModelPengurus->getPengurus()
+ 4 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Pengurus->index()
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pengurus))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp2\\htdocs\\latihan1\\public\\index.php')
+CRITICAL - 2023-11-15 08:28:28 --> Undefined variable: user
+in APPPATH\Views\pengurus\v_user.php on line 47.
+ 1 APPPATH\Views\pengurus\v_user.php(47): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined variable: user', 'C:\\xampp2\\htdocs\\latihan1\\app\\Views\\pengurus\\v_user.php', 47, [...])
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\xampp2\\htdocs\\latihan1\\app\\Views\\pengurus\\v_user.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('pengurus/v_user', [], true)
+ 5 APPPATH\Controllers\Pengurus.php(14): view('pengurus/v_user', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Pengurus->index()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pengurus))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp2\\htdocs\\latihan1\\public\\index.php')
+ERROR - 2023-11-15 14:42:23 --> Error connecting to the database: mysqli_sql_exception: Unknown database 'dbmasjid_2110038' in C:\xampp2\htdocs\latihan1\system\Database\MySQLi\Connection.php:185
+Stack trace:
+#0 C:\xampp2\htdocs\latihan1\system\Database\MySQLi\Connection.php(185): mysqli->real_connect('localhost', 'root', '', 'dbmasjid_211003...', 3306, '', 0)
+#1 C:\xampp2\htdocs\latihan1\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\xampp2\htdocs\latihan1\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\xampp2\htdocs\latihan1\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp2\htdocs\latihan1\app\Models\ModelPengurus.php(13): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp2\htdocs\latihan1\app\Controllers\Pengurus.php(12): App\Models\ModelPengurus->getPengurus()
+#6 C:\xampp2\htdocs\latihan1\system\CodeIgniter.php(919): App\Controllers\Pengurus->index()
+#7 C:\xampp2\htdocs\latihan1\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pengurus))
+#8 C:\xampp2\htdocs\latihan1\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp2\htdocs\latihan1\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp2\htdocs\latihan1\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp2\\htdoc...')
+#11 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: Unknown database 'dbmasjid_2110038' in C:\xampp2\htdocs\latihan1\system\Database\MySQLi\Connection.php:229
+Stack trace:
+#0 C:\xampp2\htdocs\latihan1\system\Database\BaseConnection.php(391): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\xampp2\htdocs\latihan1\system\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp2\htdocs\latihan1\system\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#3 C:\xampp2\htdocs\latihan1\app\Models\ModelPengurus.php(13): CodeIgniter\Database\BaseBuilder->get()
+#4 C:\xampp2\htdocs\latihan1\app\Controllers\Pengurus.php(12): App\Models\ModelPengurus->getPengurus()
+#5 C:\xampp2\htdocs\latihan1\system\CodeIgniter.php(919): App\Controllers\Pengurus->index()
+#6 C:\xampp2\htdocs\latihan1\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pengurus))
+#7 C:\xampp2\htdocs\latihan1\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp2\htdocs\latihan1\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp2\htdocs\latihan1\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp2\\htdoc...')
+#10 {main}
+CRITICAL - 2023-11-15 14:42:23 --> Unable to connect to the database.
+Main connection [MySQLi]: Unknown database 'dbmasjid_2110038'
+in SYSTEMPATH\Database\BaseConnection.php on line 427.
+ 1 SYSTEMPATH\Database\BaseConnection.php(574): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH\Database\BaseBuilder.php(1615): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `tbl_user`', [], false)
+ 3 APPPATH\Models\ModelPengurus.php(13): CodeIgniter\Database\BaseBuilder->get()
+ 4 APPPATH\Controllers\Pengurus.php(12): App\Models\ModelPengurus->getPengurus()
+ 5 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Pengurus->index()
+ 6 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pengurus))
+ 7 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 9 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp2\\htdocs\\latihan1\\public\\index.php')
+CRITICAL - 2023-11-15 14:43:27 --> Undefined index: id_pengurus
+in APPPATH\Views\pengurus\v_pengurus.php on line 52.
+ 1 APPPATH\Views\pengurus\v_pengurus.php(52): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: id_pengurus', 'C:\\xampp2\\htdocs\\latihan1\\app\\Views\\pengurus\\v_pengurus.php', 52, [...])
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\xampp2\\htdocs\\latihan1\\app\\Views\\pengurus\\v_pengurus.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('pengurus/v_pengurus', [], true)
+ 5 APPPATH\Controllers\Pengurus.php(13): view('pengurus/v_pengurus', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Pengurus->index()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pengurus))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp2\\htdocs\\latihan1\\public\\index.php')
+CRITICAL - 2023-11-15 14:43:46 --> Undefined index: id_pengurus
+in APPPATH\Views\pengurus\v_pengurus.php on line 52.
+ 1 APPPATH\Views\pengurus\v_pengurus.php(52): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: id_pengurus', 'C:\\xampp2\\htdocs\\latihan1\\app\\Views\\pengurus\\v_pengurus.php', 52, [...])
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\xampp2\\htdocs\\latihan1\\app\\Views\\pengurus\\v_pengurus.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('pengurus/v_pengurus', [], true)
+ 5 APPPATH\Controllers\Pengurus.php(13): view('pengurus/v_pengurus', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Pengurus->index()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pengurus))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp2\\htdocs\\latihan1\\public\\index.php')
+CRITICAL - 2023-11-15 14:44:40 --> Undefined index: id_pengurus
+in APPPATH\Views\pengurus\v_pengurus.php on line 52.
+ 1 APPPATH\Views\pengurus\v_pengurus.php(52): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: id_pengurus', 'C:\\xampp2\\htdocs\\latihan1\\app\\Views\\pengurus\\v_pengurus.php', 52, [...])
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\xampp2\\htdocs\\latihan1\\app\\Views\\pengurus\\v_pengurus.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('pengurus/v_pengurus', [], true)
+ 5 APPPATH\Controllers\Pengurus.php(13): view('pengurus/v_pengurus', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Pengurus->index()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pengurus))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp2\\htdocs\\latihan1\\public\\index.php')
+CRITICAL - 2023-11-15 14:46:00 --> Undefined index: id_pengurus
+in APPPATH\Views\pengurus\v_pengurus.php on line 52.
+ 1 APPPATH\Views\pengurus\v_pengurus.php(52): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: id_pengurus', 'C:\\xampp2\\htdocs\\latihan1\\app\\Views\\pengurus\\v_pengurus.php', 52, [...])
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\xampp2\\htdocs\\latihan1\\app\\Views\\pengurus\\v_pengurus.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('pengurus/v_pengurus', [], true)
+ 5 APPPATH\Controllers\Pengurus.php(13): view('pengurus/v_pengurus', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Pengurus->index()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pengurus))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp2\\htdocs\\latihan1\\public\\index.php')
+CRITICAL - 2023-11-15 14:46:02 --> Undefined index: id_pengurus
+in APPPATH\Views\pengurus\v_pengurus.php on line 52.
+ 1 APPPATH\Views\pengurus\v_pengurus.php(52): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: id_pengurus', 'C:\\xampp2\\htdocs\\latihan1\\app\\Views\\pengurus\\v_pengurus.php', 52, [...])
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\xampp2\\htdocs\\latihan1\\app\\Views\\pengurus\\v_pengurus.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('pengurus/v_pengurus', [], true)
+ 5 APPPATH\Controllers\Pengurus.php(13): view('pengurus/v_pengurus', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Pengurus->index()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pengurus))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp2\\htdocs\\latihan1\\public\\index.php')
+CRITICAL - 2023-11-15 14:47:37 --> Undefined index: id_pengurus
+in APPPATH\Views\pengurus\v_pengurus.php on line 52.
+ 1 APPPATH\Views\pengurus\v_pengurus.php(52): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: id_pengurus', 'C:\\xampp2\\htdocs\\latihan1\\app\\Views\\pengurus\\v_pengurus.php', 52, [...])
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\xampp2\\htdocs\\latihan1\\app\\Views\\pengurus\\v_pengurus.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('pengurus/v_pengurus', [], true)
+ 5 APPPATH\Controllers\Pengurus.php(13): view('pengurus/v_pengurus', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Pengurus->index()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pengurus))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp2\\htdocs\\latihan1\\public\\index.php')
+CRITICAL - 2023-11-15 14:51:45 --> Undefined index: id_pengurus
+in APPPATH\Views\pengurus\v_pengurus.php on line 52.
+ 1 APPPATH\Views\pengurus\v_pengurus.php(52): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: id_pengurus', 'C:\\xampp2\\htdocs\\latihan1\\app\\Views\\pengurus\\v_pengurus.php', 52, [...])
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\xampp2\\htdocs\\latihan1\\app\\Views\\pengurus\\v_pengurus.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('pengurus/v_pengurus', [], true)
+ 5 APPPATH\Controllers\Pengurus.php(13): view('pengurus/v_pengurus', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Pengurus->index()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Pengurus))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp2\\htdocs\\latihan1\\public\\index.php')
+CRITICAL - 2023-11-15 14:57:45 --> Undefined index: id_user
+in APPPATH\Views\pengurus\v_user.php on line 52.
+ 1 APPPATH\Views\pengurus\v_user.php(52): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: id_user', 'C:\\xampp2\\htdocs\\latihan1\\app\\Views\\pengurus\\v_user.php', 52, [...])
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\xampp2\\htdocs\\latihan1\\app\\Views\\pengurus\\v_user.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('pengurus/v_user', [], true)
+ 5 APPPATH\Controllers\User.php(13): view('pengurus/v_user', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\User->index()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp2\\htdocs\\latihan1\\public\\index.php')
+CRITICAL - 2023-11-15 15:00:21 --> Undefined index: id_user
+in APPPATH\Views\pengurus\v_user.php on line 52.
+ 1 APPPATH\Views\pengurus\v_user.php(52): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: id_user', 'C:\\xampp2\\htdocs\\latihan1\\app\\Views\\pengurus\\v_user.php', 52, [...])
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\xampp2\\htdocs\\latihan1\\app\\Views\\pengurus\\v_user.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('pengurus/v_user', [], true)
+ 5 APPPATH\Controllers\User.php(13): view('pengurus/v_user', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\User->index()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp2\\htdocs\\latihan1\\public\\index.php')
+CRITICAL - 2023-11-15 15:00:30 --> Undefined index: id_user
+in APPPATH\Views\pengurus\v_user.php on line 52.
+ 1 APPPATH\Views\pengurus\v_user.php(52): CodeIgniter\Debug\Exceptions->errorHandler(8, 'Undefined index: id_user', 'C:\\xampp2\\htdocs\\latihan1\\app\\Views\\pengurus\\v_user.php', 52, [...])
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\xampp2\\htdocs\\latihan1\\app\\Views\\pengurus\\v_user.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('pengurus/v_user', [], true)
+ 5 APPPATH\Controllers\User.php(13): view('pengurus/v_user', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\User->index()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\User))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp2\\htdocs\\latihan1\\public\\index.php')

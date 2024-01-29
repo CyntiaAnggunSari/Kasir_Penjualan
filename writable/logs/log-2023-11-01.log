@@ -1,0 +1,72 @@
+CRITICAL - 2023-11-01 04:22:28 --> Call to undefined method Config\Database::connection()
+in APPPATH\Controllers\Home.php on line 82.
+ 1 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Home->tampil()
+ 2 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp2\\htdocs\\latihan1\\public\\index.php')
+CRITICAL - 2023-11-01 04:24:52 --> Call to undefined method Config\Database::connection()
+in APPPATH\Controllers\Home.php on line 82.
+ 1 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Home->tampil()
+ 2 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp2\\htdocs\\latihan1\\public\\index.php')
+CRITICAL - 2023-11-01 04:24:57 --> Call to undefined method Config\Database::connection()
+in APPPATH\Controllers\Home.php on line 82.
+ 1 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Home->tampil()
+ 2 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp2\\htdocs\\latihan1\\public\\index.php')
+CRITICAL - 2023-11-01 04:27:24 --> Call to undefined method CodeIgniter\Database\MySQLi\Builder::getResultArray()
+in APPPATH\Controllers\Home.php on line 84.
+ 1 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Home->tampil()
+ 2 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp2\\htdocs\\latihan1\\public\\index.php')
+ERROR - 2023-11-01 04:34:39 --> mysqli_sql_exception: Duplicate entry 'k001' for key 'PRIMARY' in C:\xampp2\htdocs\latihan1\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp2\htdocs\latihan1\system\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `sp...', 0)
+#1 C:\xampp2\htdocs\latihan1\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `sp...')
+#2 C:\xampp2\htdocs\latihan1\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `sp...')
+#3 C:\xampp2\htdocs\latihan1\system\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `sp...', Array, false)
+#4 C:\xampp2\htdocs\latihan1\app\Controllers\Home.php(66): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 C:\xampp2\htdocs\latihan1\system\CodeIgniter.php(919): App\Controllers\Home->simpan()
+#6 C:\xampp2\htdocs\latihan1\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 C:\xampp2\htdocs\latihan1\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp2\htdocs\latihan1\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp2\htdocs\latihan1\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp2\\htdoc...')
+#10 {main}
+CRITICAL - 2023-11-01 04:34:39 --> Duplicate entry 'k001' for key 'PRIMARY'
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `sppd` (`kode`, `agenda`, `btransportasi`, `bpenginapan`, `bpokok`, `total`) VALUES (:kode:, :agenda:, :btransportasi:, :bpenginapan:, :bpokok:, :total:)', [...], false)
+ 2 APPPATH\Controllers\Home.php(66): CodeIgniter\Database\BaseBuilder->insert([...])
+ 3 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Home->simpan()
+ 4 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 5 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp2\\htdocs\\latihan1\\public\\index.php')
+ERROR - 2023-11-01 04:37:43 --> mysqli_sql_exception: Duplicate entry 'k001' for key 'PRIMARY' in C:\xampp2\htdocs\latihan1\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp2\htdocs\latihan1\system\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO `sp...', 0)
+#1 C:\xampp2\htdocs\latihan1\system\Database\BaseConnection.php(692): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `sp...')
+#2 C:\xampp2\htdocs\latihan1\system\Database\BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `sp...')
+#3 C:\xampp2\htdocs\latihan1\system\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `sp...', Array, false)
+#4 C:\xampp2\htdocs\latihan1\app\Controllers\Home.php(66): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 C:\xampp2\htdocs\latihan1\system\CodeIgniter.php(919): App\Controllers\Home->simpan()
+#6 C:\xampp2\htdocs\latihan1\system\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 C:\xampp2\htdocs\latihan1\system\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp2\htdocs\latihan1\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 C:\xampp2\htdocs\latihan1\system\Commands\Server\rewrite.php(47): require_once('C:\\xampp2\\htdoc...')
+#10 {main}
+CRITICAL - 2023-11-01 04:37:43 --> Duplicate entry 'k001' for key 'PRIMARY'
+in SYSTEMPATH\Database\BaseConnection.php on line 646.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2308): CodeIgniter\Database\BaseConnection->query('INSERT INTO `sppd` (`kode`, `agenda`, `btransportasi`, `bpenginapan`, `bpokok`, `total`) VALUES (:kode:, :agenda:, :btransportasi:, :bpenginapan:, :bpokok:, :total:)', [...], false)
+ 2 APPPATH\Controllers\Home.php(66): CodeIgniter\Database\BaseBuilder->insert([...])
+ 3 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\Home->simpan()
+ 4 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 5 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\xampp2\\htdocs\\latihan1\\public\\index.php')
